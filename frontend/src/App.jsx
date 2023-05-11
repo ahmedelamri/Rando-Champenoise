@@ -12,12 +12,9 @@ function App() {
       });
   }, []);
 
-  return (
-    <div className="App">
-      {randos.length}
-      <p>coucou</p>
-    </div>
-  );
+  console.log(randos);
+
+  return <div className="App">{randos.length}</div>;
 }
 
 export default App;
