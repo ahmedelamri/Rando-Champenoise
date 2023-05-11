@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [randos, setRandos] = useState([]);
@@ -14,7 +15,12 @@ function App() {
 
   console.log(randos);
 
-  return <div className="App">{randos.length}</div>;
+  return (
+    <div className="App">
+      <Navbar />
+      {randos.length}
+    </div>
+  );
 }
 
 export default App;
