@@ -3,6 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 const itemControllers = require("./controllers/itemControllers");
+
 const randos = [
   {
     id: 1,
@@ -13,6 +14,10 @@ const randos = [
     picture: "",
   },
 ];
+
+router.get("/rando", (req, res) => {
+  res.json(randos);
+});
 
 router.get("/items", itemControllers.browse);
 router.get("/items/:id", itemControllers.read);
