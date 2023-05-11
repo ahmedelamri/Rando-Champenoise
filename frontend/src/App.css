@@ -26,3 +26,8 @@ body {
 .nav {
   width: 9rem;
 }
+
+/*Card*/
+.card {
+  background-color: aqua;
+}

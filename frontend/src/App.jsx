@@ -1,6 +1,7 @@
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import React, { useEffect, useState } from "react";
+import Card from "./components/cards";
 
 function App() {
   const [randos, setRandos] = useState([]);
@@ -12,11 +13,10 @@ function App() {
         setRandos(data);
       });
   }, []);
-
   return (
     <div className="App">
-      <Home />
-      <p>coucou</p>
+      <Navbar />
+      <Card randos={randos} />
     </div>
   );
 }
