@@ -13,8 +13,6 @@ function App() {
       });
   }, []);
 
-  console.log(randos);
-
   return (
     <div className="App">
       <Navbar />
