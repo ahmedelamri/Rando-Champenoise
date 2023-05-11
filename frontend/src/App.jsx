@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <div className="cards">
         {randos.map((rando) => (
-          <Card randos={rando} />
+          <Card key={rando.id} randos={rando} />
         ))}
       </div>
     </div>
