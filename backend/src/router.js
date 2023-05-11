@@ -21,7 +21,8 @@ const randos = [
     cityname: "Châlons-en-Champagne",
     typeofcircuit: "viticultural circuits",
     distance: "14km",
-    picture: "",
+    picture:
+      "https://www.riaille.fr/fileadmin/_processed_/4/4/csm_sentier_randonnee_3b5ba73a54.jpg",
     dénivelé: "",
   },
   {
