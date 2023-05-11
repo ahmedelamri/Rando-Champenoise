@@ -72,7 +72,7 @@ const randos = [
   },
 ];
 
-router.get("/rando", (req, res) => {
+router.get("/randos", (req, res) => {
   res.json(randos);
 });
 
