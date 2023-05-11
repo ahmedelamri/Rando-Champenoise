@@ -16,7 +16,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Card randos={randos} />
+      <div className="cards">
+        {randos.map((rando) => (
+          <Card randos={rando} />
+        ))}
+      </div>
     </div>
   );
 }

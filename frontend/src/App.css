@@ -28,6 +28,19 @@ body {
 }
 
 /*Card*/
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .card {
   background-color: aqua;
+}
+
+.card h1 {
+  background-color: blanchedalmond;
+}
+
+.card img {
+  max-width: 15rem;
 }
