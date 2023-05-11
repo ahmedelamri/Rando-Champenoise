@@ -4,12 +4,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  background-color: #fdfaf8;
 }
 
 /*Navbar*/
 
 .navbar {
-  background-color: #ede4c5;
+  background-color: #e5d8d0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -29,25 +30,51 @@ body {
 
 /*Card*/
 .cards {
+  margin-top: 5rem;
+  padding-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 10rem;
+  padding-right: 6rem;
+  background-color: #e5d8d0;
+  padding-bottom: 4rem;
+  border-radius: 8rem;
 }
 
 .card {
-  margin: 2rem;
   padding-bottom: 2rem;
 }
 
-.card h1 {
-  margin-top: 6rem;
-  width: 20rem;
-  background-color: blanchedalmond;
+.card p {
+  margin-top: 9.5rem;
+  width: 17.5rem;
+  background-color: #af8d78;
   position: relative;
   text-align: center;
+  font-size: 1.5rem;
+  color: aliceblue;
 }
 
 .card img {
   position: absolute;
-  max-width: 20rem;
-  height: 15rem;
+  max-width: 17rem;
+  height: 16rem;
+  border: 5px solid #af8d78;
+}
+
+@media screen and (max-width: 700px) {
+  .cards {
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    padding: 0;
+  }
 }

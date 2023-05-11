@@ -4,7 +4,7 @@ export default function Card({ randos }) {
   return (
     <div className="card">
       <img className="card-img" src={randos.picture} alt={randos.circuitname} />
-      <h1>{randos.circuitname}</h1>
+      <p>{randos.circuitname}</p>
     </div>
   );
 }
