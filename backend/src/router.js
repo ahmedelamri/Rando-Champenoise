@@ -229,6 +229,10 @@ router.get("/randos", (req, res) => {
   res.json(randos);
 });
 
+router.get("/randos/:id", (req, res) => {
+  res.json(randos.find((rando) => rando.id === parseInt(req.params.id, 10)));
+});
+
 router.get("/items", itemControllers.browse);
 router.get("/items/:id", itemControllers.read);
 router.put("/items/:id", itemControllers.edit);

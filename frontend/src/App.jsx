@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import RandoDetails from "@pages/RandoDetails";
+import Home from "@pages/Home";
 import Navbar from "./components/Navbar";
-import Card from "./components/cards";
+import "./App.css";
 import Regles from "./components/Regles";
 
 function App() {
@@ -16,15 +18,22 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Navbar />
-      <div className="cards">
-        {randos.map((rando) => (
-          <Card randos={rando} />
-        ))}
+    <>
+      <div className="App">
+        <Navbar />
       </div>
-      <Regles />
-    </div>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home randos={randos} />} />
+
+          <Route path="/randos/:id" element={<RandoDetails />} />
+        </Routes>
+      </div>
+
+      <div>
+        <Regles />
+      </div>
+    </>
   );
 }
 
