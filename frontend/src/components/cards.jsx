@@ -4,6 +4,7 @@ export default function Card({ randos }) {
   return (
     <figure className="card">
       <img className="card-img" src={randos.picture} alt={randos.circuitname} />
+
       <figcaption className="titleRando">{randos.circuitname}</figcaption>
     </figure>
   );
