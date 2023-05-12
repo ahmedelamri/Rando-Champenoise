@@ -3,7 +3,7 @@ export default function Regles() {
     <div className="regles">
       <h1>Les règles de bonnes conduites</h1>
       <ul>
-        <h2 className="regles-sous-titre">Avant de Partir :</h2>
+        <h2>Avant de Partir :</h2>
         <li>
           Vérifier si l'itinéraire que vous souhaitez emprunter est adapté à
           votre pratique et à votre niveau.
@@ -19,7 +19,7 @@ export default function Regles() {
         </li>
       </ul>
       <ul>
-        <h2 className="regles-sous-titre">Partez bien équipé</h2>
+        <h2>Partez bien équipé</h2>
         <li>
           Chaussures de randonnée et vêtements adaptés à l’itinéraire et à la
           météo,
@@ -36,14 +36,14 @@ export default function Regles() {
         </li>
       </ul>
       <ul>
-        <h2 className="regles-sous-titre">Restez sur les sentiers</h2>
+        <h2>Restez sur les sentiers</h2>
         <li>
           Restez sur les chemins pour éviter le piétinement des espèces. Ne
           prenez pas de raccourcis et respectez les espaces fragiles
         </li>
       </ul>
       <ul>
-        <h2 className="regles-sous-titre">Soyez discrets</h2>
+        <h2>Soyez discrets</h2>
         <li>Restez discret pour avoir une chance de les apercevoir.</li>
         <li>Ne touchez jamais un jeune animal, sa mère l'abandonnerait</li>
       </ul>
