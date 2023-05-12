@@ -13,6 +13,7 @@ function App() {
         setRandos(data);
       });
   }, []);
+
   return (
     <div className="App">
       <Navbar />
