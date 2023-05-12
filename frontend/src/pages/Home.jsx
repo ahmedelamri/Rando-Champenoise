@@ -1,22 +1,18 @@
-import Card from "@components/cards";
 import React from "react";
 import PropTypes from "prop-types";
-import Regles from "@components/Regles";
+import Regles from "../components/Regles";
+import Filtrage from "../components/filtrage";
 
-function Home({ randos }) {
+function Home({ randos, filter }) {
   return (
     <>
-      <div>
-        {randos.length === 0 ? (
-          <p>Chargement en cours...</p>
-        ) : (
-          <div className="cards">
-            {randos.map((rando) => (
-              <Card randos={rando} />
-            ))}
-          </div>
-        )}
-      </div>
+      {randos.length === 0 ? (
+        <p>Chargement en cours...</p>
+      ) : (
+        <div className="cards">
+          <Filtrage data={randos} data2={filter} />
+        </div>
+      )}
       <Regles />
     </>
   );
@@ -34,6 +30,12 @@ Home.propTypes = {
       longitude: PropTypes.number.isRequired,
     })
   ),
+  filter: PropTypes.shape({
+    MaxKm: PropTypes.string,
+    MinKm: PropTypes.string,
+    dénivelé: PropTypes.number,
+    typeofcircuit: PropTypes.string,
+  }).isRequired,
 };
 
 Home.defaultProps = {
