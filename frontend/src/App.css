@@ -1,3 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.leaflet-container {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+}
 @font-face {
   font-family: "ezcarextrabold";
   src: url("./assets/Fonts/eczar-extrabold-webfont.woff2") format("woff2"),
@@ -80,6 +89,20 @@ body {
   border: 5px solid #af8d78;
   border-radius: 3rem;
 }
+.Randodetails {
+  text-align: center;
+}
+.imgRando {
+  height: 600px;
+  width: 700px;
+  border-radius: 10%;
+  box-shadow: 10px 10px 10px black;
+  margin: 2rem;
+}
+.Mapcontainer {
+  height: 500px;
+  width: 500px;
+}
 
 .card p:hover {
   cursor: pointer;
@@ -128,5 +151,14 @@ body {
 
   .card {
     padding: 0;
+  }
+  .imgRando {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  .Mapcontainer {
+    height: 50px;
+    width: 50px;
   }
 }
