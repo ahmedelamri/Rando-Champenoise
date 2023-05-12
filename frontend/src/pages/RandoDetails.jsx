@@ -12,7 +12,7 @@ function RandoDetails() {
     fetch(`http://localhost:5050/randos/${id}`)
       .then((response) => response.json())
       .then((data) => setRando(data));
-  }, []);
+  }, [id]);
 
   // fetch => request => express => response => then response.json => data => setState => state
 
@@ -25,11 +25,14 @@ function RandoDetails() {
 
             <p>Nom : {rando.circuitname}</p>
             <p>Lieu : {rando.cityname}</p>
-            <p>Description : </p>
+            <p>Description : {rando.typeofcircuit} </p>
+            <div>
+              <img src={rando.picture} alt={rando.circuitname} />
+            </div>
           </div>
         </section>
         <section>
-          <div style={{ height: "500px", width: "100%" }}>
+          <div style={{ height: "500px", width: "500px" }}>
             <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
