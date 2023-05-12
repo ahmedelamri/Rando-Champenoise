@@ -7,6 +7,12 @@
   width: 500px;
   height: 500px;
 }
+@font-face {
+  font-family: "ezcarextrabold";
+  src: url("./assets/Fonts/eczar-extrabold-webfont.woff2") format("woff2"),
+    url("./assets/Fonts/eczar-extrabold-webfont.woff") format("woff");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,6 +54,9 @@ body {
   background-color: #e5d8d0;
   padding-bottom: 4rem;
   border-radius: 8rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .card {
@@ -86,6 +95,32 @@ body {
   width: 500px;
 }
 
+/*Regles*/
+.regles {
+  text-align: center;
+  background-color: #c1ae9b;
+  border-radius: 8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.regles h1 {
+  font-family: "ezcarextrabold";
+  color: #aa7338;
+  font-size: 2.5rem;
+}
+
+.regles ul li {
+  list-style: none;
+}
+
+.regles-sous-titre {
+  font-family: "ezcarextrabold";
+}
+/*Responsive*/
 @media screen and (max-width: 700px) {
   .cards {
     padding: 0;

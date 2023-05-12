@@ -4,6 +4,7 @@ import RandoDetails from "@pages/RandoDetails";
 import Home from "@pages/Home";
 import Navbar from "./components/Navbar";
 import "./App.css";
+import Regles from "./components/Regles";
 
 function App() {
   const [randos, setRandos] = useState([]);
@@ -21,13 +22,16 @@ function App() {
       <div className="App">
         <Navbar />
       </div>
-
       <div>
         <Routes>
           <Route path="/" element={<Home randos={randos} />} />
 
           <Route path="/randos/:id" element={<RandoDetails />} />
         </Routes>
+      </div>
+
+      <div>
+        <Regles />
       </div>
     </>
   );
