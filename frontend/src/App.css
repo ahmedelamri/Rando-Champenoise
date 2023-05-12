@@ -60,6 +60,7 @@ body {
   max-width: 17rem;
   height: 16rem;
   border: 5px solid #af8d78;
+  border-radius: 3rem;
 }
 
 @media screen and (max-width: 700px) {
