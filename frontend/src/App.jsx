@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Card from "./components/cards";
+import Regles from "./components/Regles";
 
 function App() {
   const [randos, setRandos] = useState([]);
@@ -22,6 +23,7 @@ function App() {
           <Card randos={rando} />
         ))}
       </div>
+      <Regles />
     </div>
   );
 }
