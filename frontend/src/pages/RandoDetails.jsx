@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import { useParams } from "react-router-dom";
 
 function RandoDetails() {
-  const position = [48.866667, 2.333333];
-
   const [rando, setRando] = useState();
   const { id } = useParams();
+
+  // const { position } = rando;
 
   useEffect(() => {
     fetch(`http://localhost:5050/randos/${id}`)
@@ -34,11 +34,16 @@ function RandoDetails() {
           </div>
         </div>
         <div className="Mapcontainer">
-          <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+          <MapContainer
+            center={rando.position}
+            zoom={13}
+            scrollWheelZoom={false}
+          >
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
+            <Marker key={rando.id} position={rando.position} />
           </MapContainer>
         </div>
       </section>
