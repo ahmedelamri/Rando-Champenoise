@@ -70,6 +70,8 @@ body {
   text-align: center;
   font-size: 1.5rem;
   color: aliceblue;
+  display: inline-block;
+  text-decoration: none;
   transition: transform 0.3s ease-in-out;
 }
 .card img {
