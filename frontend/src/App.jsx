@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
+import Filtrage from "@components/filtrage";
 
 function App() {
   const [randos, setRandos] = useState([]);
@@ -13,10 +14,20 @@ function App() {
       });
   }, []);
 
+  const UserFilter = {
+    MinKm : null,
+    MaxKm : null,
+    dénivelé : null,
+    typeofcircuit : null,
+  };
+
   return (
     <div className="App">
       <Navbar />
-      {randos.length}
+
+      
+
+      <Filtrage data={randos} data2={UserFilter}/>
     </div>
   );
 }
