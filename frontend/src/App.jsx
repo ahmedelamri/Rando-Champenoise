@@ -10,7 +10,7 @@ function App() {
     MinKm : '',
     MaxKm : '',
     dénivelé : 0,
-    typeofcircuit : null,
+    typeofcircuit : "0",
   });
 
   useEffect(() => {
