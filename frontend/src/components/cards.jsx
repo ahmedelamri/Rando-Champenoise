@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 export default function Card({ randos }) {
   return (
-    <Link to={`/randos/${randos.id}`}>
-      <div className="card">
+    <div className="card">
+      <Link to={`/randos/${randos.id}`}>
         <img
           className="card-img"
           src={randos.picture}
           alt={randos.circuitname}
         />
         <p>{randos.circuitname}</p>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }
 
