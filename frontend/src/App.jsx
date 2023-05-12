@@ -4,7 +4,14 @@ import Navbar from "./components/Navbar";
 import Filtrage from "@components/filtrage";
 
 function App() {
+
   const [randos, setRandos] = useState([]);
+  const [Filter, setFilter] = useState({
+    MinKm : '',
+    MaxKm : '',
+    dénivelé : 0,
+    typeofcircuit : null,
+  });
 
   useEffect(() => {
     fetch("http://localhost:5050/randos")
@@ -14,20 +21,30 @@ function App() {
       });
   }, []);
 
-  const UserFilter = {
-    MinKm : null,
-    MaxKm : null,
-    dénivelé : null,
-    typeofcircuit : null,
+  const handleOptionChange = (event) => {
+    //Filter.dénivelé = event.target.value
+    setFilter({...Filter, dénivelé : event.target.value});
+  };
+
+  const handleOption2Change = (event) => {
+    //Filter.dénivelé = event.target.value
+    setFilter({...Filter, typeofcircuit : event.target.value});
+  };
+
+  const handleInputMinChange = (event) => {
+    //Filter.MinKm = event.target.value
+    setFilter({...Filter, MinKm : event.target.value});
+  };
+
+  const handleInputMaxChange = (event) => {
+    //Filter.MaxKm = event.target.value
+    setFilter({...Filter, MaxKm : event.target.value});
   };
 
   return (
     <div className="App">
-      <Navbar />
-
-      
-
-      <Filtrage data={randos} data2={UserFilter}/>
+      <Navbar onOptionChange={handleOptionChange} onOption2Change={handleOption2Change} onInputMinChange={handleInputMinChange} onInputMaxChange={handleInputMaxChange} />
+      <Filtrage data={randos} data2={Filter}/>
     </div>
   );
 }
