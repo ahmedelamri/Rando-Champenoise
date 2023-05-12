@@ -27,8 +27,6 @@ function App() {
           <Route path="/randos/:id" element={<RandoDetails />} />
         </Routes>
       </div>
-
-      <div></div>
     </>
   );
 }
