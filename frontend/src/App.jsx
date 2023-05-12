@@ -1,6 +1,7 @@
-import "./App.css";
 import React, { useEffect, useState } from "react";
+import "./App.css";
 import Navbar from "./components/Navbar";
+import Card from "./components/cards";
 
 function App() {
   const [randos, setRandos] = useState([]);
@@ -16,7 +17,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {randos.length}
+      <div className="cards">
+        {randos.map((rando) => (
+          <Card randos={rando} />
+        ))}
+      </div>
     </div>
   );
 }
