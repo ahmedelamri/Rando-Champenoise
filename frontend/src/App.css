@@ -93,6 +93,10 @@ body {
 .regles ul li {
   list-style: none;
 }
+
+.regles-sous-titre {
+  font-family: "ezcarextrabold";
+}
 /*Responsive*/
 @media screen and (max-width: 700px) {
   .cards {
