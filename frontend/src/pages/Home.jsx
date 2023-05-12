@@ -1,20 +1,24 @@
 import Card from "@components/cards";
 import React from "react";
 import PropTypes from "prop-types";
+import Regles from "@components/Regles";
 
 function Home({ randos }) {
   return (
-    <div>
-      {randos.length === 0 ? (
-        <p>Chargement en cours...</p>
-      ) : (
-        <div className="cards">
-          {randos.map((rando) => (
-            <Card randos={rando} />
-          ))}
-        </div>
-      )}
-    </div>
+    <>
+      <div>
+        {randos.length === 0 ? (
+          <p>Chargement en cours...</p>
+        ) : (
+          <div className="cards">
+            {randos.map((rando) => (
+              <Card randos={rando} />
+            ))}
+          </div>
+        )}
+      </div>
+      <Regles />
+    </>
   );
 }
 
