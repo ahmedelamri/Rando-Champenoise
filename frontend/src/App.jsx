@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import RandoDetails from "@pages/RandoDetails";
+import Home from "@pages/Home";
 import Navbar from "./components/Navbar";
 import "./App.css";
 
@@ -19,17 +20,12 @@ function App() {
     <>
       <div className="App">
         <Navbar />
-        {randos.length}
       </div>
-      <div className="App">
-        {randos.length === 0 ? (
-          <p>Chargement en cours...</p>
-        ) : (
-          <p>{randos.length}</p>
-        )}
-      </div>
+
       <div>
         <Routes>
+          <Route path="/" element={<Home randos={randos} />} />
+
           <Route path="/randos/:id" element={<RandoDetails />} />
         </Routes>
       </div>

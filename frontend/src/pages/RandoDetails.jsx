@@ -12,36 +12,36 @@ function RandoDetails() {
     fetch(`http://localhost:5050/randos/${id}`)
       .then((response) => response.json())
       .then((data) => setRando(data));
-  }, [id]);
+  }, []);
 
   // fetch => request => express => response => then response.json => data => setState => state
 
   return (
     rando && (
-      <>
-        <section>
-          <div>
-            <h1>Hello et bienvenue sur {rando.circuitname}!</h1>
+      <section className="Randodetails">
+        <div>
+          <h1>Hello et bienvenue sur {rando.circuitname}!</h1>
 
-            <p>Nom : {rando.circuitname}</p>
-            <p>Lieu : {rando.cityname}</p>
-            <p>Description : {rando.typeofcircuit} </p>
-            <div>
-              <img src={rando.picture} alt={rando.circuitname} />
-            </div>
+          <p>Nom : {rando.circuitname}</p>
+          <p>Lieu : {rando.cityname}</p>
+          <p>Description : {rando.typeofcircuit} </p>
+          <div>
+            <img
+              className="imgRando"
+              src={rando.picture}
+              alt={rando.circuitname}
+            />
           </div>
-        </section>
-        <section>
-          <div style={{ height: "500px", width: "500px" }}>
-            <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-            </MapContainer>
-          </div>
-        </section>
-      </>
+        </div>
+        <div className="Mapcontainer">
+          <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+          </MapContainer>
+        </div>
+      </section>
     )
   );
 }
