@@ -10,7 +10,7 @@ export default function Card({ randos }) {
           src={randos.picture}
           alt={randos.circuitname}
         />
-        <p>{randos.circuitname}</p>
+       <p>{randos.circuitname}</p>
       </Link>
     </div>
   );
