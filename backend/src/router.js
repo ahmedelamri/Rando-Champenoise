@@ -10,7 +10,7 @@ const randos = [
     circuitname: "Circuit des étangs d'Outines",
     cityname: "Giffaumont-Champaubert",
     typeofcircuit: "discover circuits",
-    distance: "7km",
+    distance: "7",
     picture:
       "https://api.cloudly.space/resize/clip/1900/1080/75/aHR0cDovL21lZGlhcy50b3VyaXNtLXN5c3RlbS5jb20vZC82LzUyNzkyN19fcGJwMTMyOS5qcGc=/image.jpg",
     dénivelé: "1",
@@ -21,7 +21,7 @@ const randos = [
     circuitname: "Circuit des Ajaux",
     cityname: "Châlons-en-Champagne",
     typeofcircuit: "viticultural circuits",
-    distance: "14km",
+    distance: "14",
     picture:
       "https://www.riaille.fr/fileadmin/_processed_/4/4/csm_sentier_randonnee_3b5ba73a54.jpg",
     dénivelé: "3",
@@ -32,7 +32,7 @@ const randos = [
     circuitname: "Circuit de la vallée de la Marne",
     cityname: "Vauciennes",
     typeofcircuit: "The heritage circuits",
-    distance: "30km",
+    distance: "30",
     picture:
       "https://www.tourisme-en-champagne.com/sites/www.tourisme-en-champagne.com/files/styles/paragraphes_mosaique/public/thumbnails/image/statue-du-pape-urbain-ii-chatillon-sur-marnecm.-jolyot-coll.-adt-marne.jpg?itok=vyJS_PeB",
     dénivelé: "1",
@@ -43,7 +43,7 @@ const randos = [
     circuitname: "Circuit des Ruelles de Sézanne",
     cityname: "Sézanne",
     typeofcircuit: "The heritage circuits",
-    distance: "6km",
+    distance: "6",
     picture:
       "https://www.sezanne-tourisme.fr/wp-content/uploads/2020/07/DSC_2713-scaled.jpg",
     dénivelé: "1",
@@ -54,7 +54,7 @@ const randos = [
     circuitname: "Circuit du Fau de Valmy",
     cityname: "La Grange-aux-bois",
     typeofcircuit: "Nature circuits",
-    distance: "16km",
+    distance: "16",
     picture:
       "https://i1.wp.com/lestetardsarboricoles.fr/wordpress/wp-content/uploads/Fau-de-Valmy-Marne-Yannick-Morhan-9.jpg",
     dénivelé: "1",
@@ -65,7 +65,7 @@ const randos = [
     circuitname: "Circuit du Mont Aigu",
     cityname: "Avenay-Val-d’Or",
     typeofcircuit: "The heritage circuits",
-    distance: "11km",
+    distance: "11",
     picture:
       "https://fichier0.cirkwi.com/image/photo/circuit/800x500/93103/fr/0.jpg?1581000967",
     dénivelé: "1",
@@ -76,7 +76,7 @@ const randos = [
     circuitname: "La boucle de l’Ardre",
     cityname: "Crugny",
     typeofcircuit: "discover circuits",
-    distance: "13km",
+    distance: "13",
     picture:
       "https://fichier0.cirkwi.com/image/photo/circuit/800x500/51168/fr/0.jpg?1484791750",
     dénivelé: "2",
@@ -87,7 +87,7 @@ const randos = [
     circuitname: "Circuit à la découverte de Giffaumont-Champaubert",
     cityname: "Giffaumont-Champaubert",
     typeofcircuit: "discover circuits",
-    distance: "9km",
+    distance: "9",
     picture:
       "https://api.cloudly.space/resize/cropratioresize/460/345/60/aHR0cDovL21lZGlhcy50b3VyaXNtLXN5c3RlbS5jb20vZC8wLzUzMDY0MF93dzJlOTA5MnBib3VyZ3VpZ25vbi5qcGc=/image.jpg",
     dénivelé: "1",
@@ -98,7 +98,7 @@ const randos = [
     circuitname: "Circuit Châlons au fil de l’eau",
     cityname: "Châlons-en-Champagne",
     typeofcircuit: "viticultural circuits",
-    distance: "7.5km",
+    distance: "7.5",
     picture:
       "https://remeng.rosselcdn.net/sites/default/files/dpistyles_v2/rem_16_9_1124w/2021/05/19/node_258332/12291111/public/2021/05/19/B9727088031Z.1_20210519153111_000%2BGVCI5K43F.1-0.jpg?itok=P13IIrPC1621436733",
     dénivelé: "2",
@@ -109,7 +109,7 @@ const randos = [
     circuitname: "Circuit du vignoble d’Epernay",
     cityname: "Epernay",
     typeofcircuit: "viticultural circuits",
-    distance: "21km",
+    distance: "21",
     picture:
       "https://www.epernay-tourisme.com/assets/uploads/2022/05/velo-dans-les-vignes-hautvillers-les-droners-3-1024x682.jpg",
     dénivelé: "2",
@@ -120,7 +120,7 @@ const randos = [
     circuitname: "Circuit des Remparts de Montmirail",
     cityname: "Crugny",
     typeofcircuit: "The heritage circuits",
-    distance: "4km",
+    distance: "4",
     picture:
       "https://fichier0.cirkwi.com/image/photo/circuit/800x500/131322/fr/0.jpg?1559323485",
     dénivelé: "1",
@@ -131,7 +131,7 @@ const randos = [
     circuitname: "Circuit de la Vallée de la Seine",
     cityname: "Marcilly-sur-Seine",
     typeofcircuit: "discover circuits",
-    distance: "16.5km",
+    distance: "16.5",
     picture:
       "https://www.sortir-yvelines.fr/var/cdt78_socle/storage/images/folder/cdt-images/datso-gallery/reportage-2018-xavier-renoux/rolleboise-vallee-de-la-seine-x.renoux/2208508-1-fre-FR/Rolleboise-vallee-de-la-seine-X.Renoux.jpg",
     dénivelé: "2",
@@ -142,7 +142,7 @@ const randos = [
     circuitname: "La vallée du Surmelin",
     cityname: "Montmort-Lucy",
     typeofcircuit: "discover circuits",
-    distance: "41km",
+    distance: "41",
     picture:
       "https://fichier0.cirkwi.com/image/photo/circuit/800x500/114008/fr/0.jpg?1556638038",
     dénivelé: "3",
@@ -153,7 +153,7 @@ const randos = [
     circuitname: "Circuit des étangs de Châtrices",
     cityname: "Châtrices + Villers-en-Argonne",
     typeofcircuit: "Nature circuits",
-    distance: "7km",
+    distance: "7",
     picture:
       "https://cdt51.media.tourinsoft.eu/upload/Etangs-de-Chatrices---Villers-en-Argonne-M.Jolyot-Coll.jpg?width=1050&height=750&crop=1",
     dénivelé: "1",
@@ -164,7 +164,7 @@ const randos = [
     circuitname: "Circuit des étangs de Givry ",
     cityname: "Givry-en-Argonne",
     typeofcircuit: "Nature circuit",
-    distance: "8km",
+    distance: "8",
     picture: "https://cdt51.media.tourinsoft.eu/upload/etang-2.JPG",
     dénivelé: "1",
     position: [48.946523258541816, 4.88763326721501],
@@ -174,7 +174,7 @@ const randos = [
     circuitname: "Circuit des Sept Vents au Mont Blanc",
     cityname: "Oger",
     typeofcircuit: "The heritage circuits",
-    distance: "7.5km",
+    distance: "7.5",
     picture:
       "https://fichier0.cirkwi.com/image/photo/poi/800x500/1220304/fr/0.jpg?1682331955",
     dénivelé: "2",
@@ -185,7 +185,7 @@ const randos = [
     circuitname: "Circuit de Vix au Sept Vents",
     cityname: "Crugny",
     typeofcircuit: "The heritage circuits",
-    distance: "7km",
+    distance: "7",
     picture: "https://pierry.fr/sites/epernay-agglo/files/image/parc_vix_3.jpg",
     dénivelé: "1",
     position: [49.37006453731856, 3.8837915060528507],
@@ -195,7 +195,7 @@ const randos = [
     circuitname: "Circuit de Saint-Aubeu",
     cityname: "Hermonville",
     typeofcircuit: "The memory circuits",
-    distance: "19km",
+    distance: "19",
     picture:
       "https://cdt51.media.tourinsoft.eu/upload/Eglise---Hermonville-C.Manquillet-Coll.CDT-Marne--2-.jpg?width=1050&height=750&crop=1",
     dénivelé: "1",
@@ -206,7 +206,7 @@ const randos = [
     circuitname: "Circuit de la Côte Saint-Michel",
     cityname: "Prouilly",
     typeofcircuit: "The memory circuits",
-    distance: "17km",
+    distance: "17",
     picture:
       "https://cdt51.media.tourinsoft.eu/upload/pevy.jpg?width=1050&height=750&crop=1",
     dénivelé: "2",
@@ -217,7 +217,7 @@ const randos = [
     circuitname: "Circuit de Trigny ",
     cityname: "Trigny",
     typeofcircuit: "The memory circuits",
-    distance: "15km",
+    distance: "15",
     picture:
       "https://ville-data.com/boucle-de-randonnee/image/boucle-de-randonnee-300.jpg",
     dénivelé: "1",
