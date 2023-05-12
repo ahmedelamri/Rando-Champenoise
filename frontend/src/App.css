@@ -14,7 +14,6 @@
 }
 
 body {
-  margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -71,15 +70,6 @@ body {
   text-align: center;
   font-size: 1.5rem;
   color: aliceblue;
-}
-.card p {
-  margin-top: 9.5rem;
-  width: 17.5rem;
-  background-color: #af8d78;
-  position: relative;
-  text-align: center;
-  font-size: 1.5rem;
-  color: aliceblue;
   transition: transform 0.3s ease-in-out;
 }
 .card img {
@@ -102,6 +92,7 @@ body {
 .Mapcontainer {
   height: 500px;
   width: 500px;
+  margin: auto;
 }
 
 .card p:hover {
