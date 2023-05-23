@@ -224,19 +224,15 @@ const randos = [
     position: [49.32124642620667, 3.896864198271755],
   },
 ];
-
 router.get("/randos", (req, res) => {
   res.json(randos);
 });
-
 router.get("/randos/:id", (req, res) => {
   res.json(randos.find((rando) => rando.id === parseInt(req.params.id, 10)));
 });
-
 router.get("/items", itemControllers.browse);
 router.get("/items/:id", itemControllers.read);
 router.put("/items/:id", itemControllers.edit);
 router.post("/items", itemControllers.add);
 router.delete("/items/:id", itemControllers.destroy);
-
 module.exports = router;

@@ -10,19 +10,19 @@ export default function Navbar({
   onInputMaxChange,
 }) {
   const handleSelectChange = (event) => {
-    onOptionChange.onOptionChange(event);
+    onOptionChange(event);
   };
 
   const handleSelect2Change = (event) => {
-    onOption2Change.onOption2Change(event);
+    onOption2Change(event);
   };
 
   const handleInputMinChange = (event) => {
-    onInputMinChange.onInputMinChange(event);
+    onInputMinChange(event);
   };
 
   const handleInputMaxChange = (event) => {
-    onInputMaxChange.onInputMaxChange(event);
+    onInputMaxChange(event);
   };
 
   return (
@@ -37,29 +37,29 @@ export default function Navbar({
           <option value="0">Difficultés</option>
           <option value="1">facile</option>
           <option value="2">normal</option>
-          <option value="3">hard</option>
+          <option value="3">difficile</option>
         </select>
 
         <select onChange={handleSelect2Change}>
           <option value="0">Parcours</option>
-          <option value="discover circuits">discover circuits</option>
-          <option value="viticultural circuits">viticultural circuits</option>
-          <option value="The heritage circuits">The heritage circuits</option>
-          <option value="Nature circuits">Nature circuits</option>
-          <option value="The memory circuits">The memory circuits</option>
+          <option value="discover circuits">Parcours de découverte</option>
+          <option value="viticultural circuits">Parcours viticole</option>
+          <option value="The heritage circuits">Parcours patrimonial</option>
+          <option value="Nature circuits">Parcours nature</option>
+          <option value="The memory circuits">Parcours de mémoire</option>
         </select>
 
         <input
           type="number"
           step="0.1"
-          placeholder="min km"
+          placeholder="km minimum"
           name="min"
           onChange={handleInputMinChange}
         />
         <input
           type="number"
           step="0.1"
-          placeholder="max km"
+          placeholder="km maximum"
           name="max"
           onChange={handleInputMaxChange}
         />

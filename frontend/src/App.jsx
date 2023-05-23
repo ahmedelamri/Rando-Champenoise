@@ -13,7 +13,6 @@ function App() {
     dénivelé: 0,
     typeofcircuit: null,
   });
-
   useEffect(() => {
     fetch("http://localhost:5050/randos")
       .then((response) => response.json())
@@ -21,27 +20,22 @@ function App() {
         setRandos(data);
       });
   }, []);
-
   const handleOptionChange = (event) => {
     // Filter.dénivelé = event.target.value
     setFilter({ ...Filter, dénivelé: event.target.value });
   };
-
   const handleOption2Change = (event) => {
     // Filter.dénivelé = event.target.value
     setFilter({ ...Filter, typeofcircuit: event.target.value });
   };
-
   const handleInputMinChange = (event) => {
     // Filter.MinKm = event.target.value
     setFilter({ ...Filter, MinKm: event.target.value });
   };
-
   const handleInputMaxChange = (event) => {
     // Filter.MaxKm = event.target.value
     setFilter({ ...Filter, MaxKm: event.target.value });
   };
-
   return (
     <>
       <div className="App">
@@ -61,5 +55,4 @@ function App() {
     </>
   );
 }
-
 export default App;

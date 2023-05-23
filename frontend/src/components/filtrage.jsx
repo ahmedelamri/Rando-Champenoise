@@ -9,7 +9,6 @@ export default function Filtrage({ data, data2 }) {
     let IsKm = false;
     let IsDénivelé = false;
     let IsTypeofcircuit = false;
-
     if (
       (item.distance >= MinKm && item.distance <= MaxKm) ||
       (Number.isNaN(MinKm) && item.distance <= MaxKm) ||
@@ -18,40 +17,35 @@ export default function Filtrage({ data, data2 }) {
     ) {
       IsKm = true;
     }
-
     if (item.dénivelé === dénivelé || dénivelé === "0") {
       IsDénivelé = true;
     }
-
-    if (item.typeofcircuit === typeofcircuit || typeofcircuit === "0") {
+    if (item.typeofcircuit === typeofcircuit || typeofcircuit === null) {
       IsTypeofcircuit = true;
     }
-
     if (IsKm === true && IsDénivelé === true && IsTypeofcircuit === true) {
       return true;
     }
     return false;
   };
-
   return (
     <>
       {data.filter(filtre).map((item) => (
-        <Card randos={item} />
+        <Card key={item.id} randos={item} />
       ))}
     </>
   );
 }
-
 Filtrage.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      circuitname: PropTypes.string.isRequired,
-      cityname: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      picture: PropTypes.string.isRequired,
-      latitude: PropTypes.number.isRequired,
-      longitude: PropTypes.number.isRequired,
+      id: PropTypes.number,
+      circuitname: PropTypes.string,
+      cityname: PropTypes.string,
+      description: PropTypes.string,
+      picture: PropTypes.string,
+      latitude: PropTypes.number,
+      longitude: PropTypes.number,
     })
   ).isRequired,
   data2: PropTypes.shape({
