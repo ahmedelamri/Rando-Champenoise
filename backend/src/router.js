@@ -2,8 +2,6 @@ const express = require("express");
 
 const router = express.Router();
 
-const itemControllers = require("./controllers/itemControllers");
-
 const randos = [
   {
     id: 1,
@@ -232,11 +230,5 @@ router.get("/randos", (req, res) => {
 router.get("/randos/:id", (req, res) => {
   res.json(randos.find((rando) => rando.id === parseInt(req.params.id, 10)));
 });
-
-router.get("/items", itemControllers.browse);
-router.get("/items/:id", itemControllers.read);
-router.put("/items/:id", itemControllers.edit);
-router.post("/items", itemControllers.add);
-router.delete("/items/:id", itemControllers.destroy);
 
 module.exports = router;

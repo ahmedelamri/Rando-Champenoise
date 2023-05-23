@@ -6,15 +6,11 @@ function RandoDetails() {
   const [rando, setRando] = useState();
   const { id } = useParams();
 
-  // const { position } = rando;
-
   useEffect(() => {
-    fetch(`http://localhost:5050/randos/${id}`)
+    fetch(`http://localhost:3456/randos/${id}`)
       .then((response) => response.json())
       .then((data) => setRando(data));
   }, []);
-
-  // fetch => request => express => response => then response.json => data => setState => state
 
   return (
     rando && (
