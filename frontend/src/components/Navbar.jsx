@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import Logo from "../images/Rando-Champ.png";
 import Fonts from "../images/Fonts.png";
 
@@ -9,28 +10,30 @@ export default function Navbar({
   onInputMaxChange,
 }) {
   const handleSelectChange = (event) => {
-    onOptionChange.onOptionChange(event);
+    onOptionChange(event);
   };
 
   const handleSelect2Change = (event) => {
-    onOption2Change.onOption2Change(event);
+    onOption2Change(event);
   };
 
   const handleInputMinChange = (event) => {
-    onInputMinChange.onInputMinChange(event);
+    onInputMinChange(event);
   };
 
   const handleInputMaxChange = (event) => {
-    onInputMaxChange.onInputMaxChange(event);
+    onInputMaxChange(event);
   };
 
   return (
     <div>
       <nav className="navbar">
-        <img className="navbar-img" src={Logo} alt="Rando'Champenoise" />
-        <img className="nav" src={Fonts} alt="fonts" />
+        <Link to="/">
+          <img className="navbar-img" src={Logo} alt="Rando'Champenoise" />
+          <img className="nav" src={Fonts} alt="fonts" />
+        </Link>
       </nav>
-      <div>
+      <div className="filternav">
         <select onChange={handleSelectChange}>
           <option value="0">Difficultés</option>
           <option value="1">facile</option>

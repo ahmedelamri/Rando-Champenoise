@@ -23,7 +23,7 @@ export default function Filtrage({ data, data2 }) {
       IsDénivelé = true;
     }
 
-    if (item.typeofcircuit === typeofcircuit || typeofcircuit === "0") {
+    if (item.typeofcircuit === typeofcircuit || typeofcircuit === null) {
       IsTypeofcircuit = true;
     }
 
@@ -36,7 +36,7 @@ export default function Filtrage({ data, data2 }) {
   return (
     <>
       {data.filter(filtre).map((item) => (
-        <Card randos={item} />
+        <Card key={item.id} randos={item} />
       ))}
     </>
   );
@@ -45,13 +45,13 @@ export default function Filtrage({ data, data2 }) {
 Filtrage.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      circuitname: PropTypes.string.isRequired,
-      cityname: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      picture: PropTypes.string.isRequired,
-      latitude: PropTypes.number.isRequired,
-      longitude: PropTypes.number.isRequired,
+      id: PropTypes.number,
+      circuitname: PropTypes.string,
+      cityname: PropTypes.string,
+      description: PropTypes.string,
+      picture: PropTypes.string,
+      latitude: PropTypes.number,
+      longitude: PropTypes.number,
     })
   ).isRequired,
   data2: PropTypes.shape({

@@ -21,13 +21,13 @@ function Home({ randos, filter }) {
 Home.propTypes = {
   randos: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      circuitname: PropTypes.string.isRequired,
-      cityname: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      picture: PropTypes.string.isRequired,
-      latitude: PropTypes.number.isRequired,
-      longitude: PropTypes.number.isRequired,
+      id: PropTypes.number,
+      circuitname: PropTypes.string,
+      cityname: PropTypes.string,
+      description: PropTypes.string,
+      picture: PropTypes.string,
+      latitude: PropTypes.number,
+      longitude: PropTypes.number,
     })
   ),
   filter: PropTypes.shape({
