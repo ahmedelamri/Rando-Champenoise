@@ -15,7 +15,7 @@ function App() {
   });
 
   useEffect(() => {
-    fetch("http://localhost:3456/randos")
+    fetch("http://localhost:5050/randos")
       .then((response) => response.json())
       .then((data) => {
         setRandos(data);
