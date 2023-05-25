@@ -85,27 +85,59 @@ body {
   border: 5px solid #af8d78;
   border-radius: 3rem;
 }
-.Randodetails {
-  text-align: center;
-}
-.imgRando {
-  height: 600px;
-  width: 700px;
-  border-radius: 10%;
-  box-shadow: 10px 10px 10px black;
-  margin: 2rem;
-}
-.Mapcontainer {
-  height: 500px;
-  width: 500px;
-  margin: auto;
-}
 
 .card p:hover {
   cursor: pointer;
   color: #af8d78;
   background-color: aliceblue;
   transform: scale(1.08);
+}
+
+/*Rando Détail*/
+.Randodetails {
+  text-align: center;
+  background-color: #e5d8d0;
+  border-radius: 20%;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Randodetails-div {
+  background-color: #e5d8d0;
+  border-radius: 20%;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Randodetails h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  color: #aa7338;
+  font-family: "ezcarextrabold";
+}
+
+.Randodetails p {
+  color: #1f3b2d;
+  font-family: "ezcarextrabold";
+  font-size: 1.3rem;
+}
+
+.imgRando {
+  height: 25rem;
+  width: 30rem;
+  border-radius: 10%;
+  margin: 2rem;
+  border: 10px solid #af8d78;
 }
 
 /*Regles*/
@@ -139,22 +171,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 1.5rem;
 }
 
 .filternav select {
   margin-right: 10px;
   padding: 5px;
+  color: #aa7338;
+  font-weight: 600;
 }
 
 .filternav input[type="number"] {
   margin-right: 10px;
   padding: 5px;
   width: 80px;
+  color: #aa7338;
+  font-weight: 600;
 }
 
 .filternav input[type="number"]::placeholder {
-  color: brown;
+  color: #aa7338;
+  font-weight: 600;
 }
 
 .filternav input[type="number"]:focus {

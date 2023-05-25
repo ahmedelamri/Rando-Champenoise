@@ -7,7 +7,7 @@ function RandoDetails() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:3456/randos/${id}`)
+    fetch(`http://localhost:5050/randos/${id}`)
       .then((response) => response.json())
       .then((data) => setRando(data));
   }, []);
@@ -15,12 +15,13 @@ function RandoDetails() {
   return (
     rando && (
       <section className="Randodetails">
-        <div>
-          <h1>Hello et bienvenue sur {rando.circuitname}!</h1>
+        <div className="Randodetails-div">
+          <h1>Le {rando.circuitname}!</h1>
 
           <p>Nom : {rando.circuitname}</p>
           <p>Lieu : {rando.cityname}</p>
           <p>Description : {rando.typeofcircuit} </p>
+          <p>Distance : {rando.distance} km</p>
           <div>
             <img
               className="imgRando"
@@ -29,7 +30,7 @@ function RandoDetails() {
             />
           </div>
         </div>
-        <div className="Mapcontainer">
+        <div>
           <MapContainer
             center={rando.position}
             zoom={13}
