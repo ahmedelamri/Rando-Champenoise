@@ -4,6 +4,10 @@ const router = express.Router();
 
 const itemControllers = require("./controllers/itemControllers");
 
+const userControllers = require("./controllers/userControllers");
+
+const authControllers = require("./controllers/authControllers");
+
 const randos = [
   {
     id: 1,
@@ -224,15 +228,27 @@ const randos = [
     position: [49.32124642620667, 3.896864198271755],
   },
 ];
+
 router.get("/randos", (req, res) => {
   res.json(randos);
 });
+
 router.get("/randos/:id", (req, res) => {
   res.json(randos.find((rando) => rando.id === parseInt(req.params.id, 10)));
 });
+
 router.get("/items", itemControllers.browse);
 router.get("/items/:id", itemControllers.read);
 router.put("/items/:id", itemControllers.edit);
 router.post("/items", itemControllers.add);
 router.delete("/items/:id", itemControllers.destroy);
+
+router.get("/users", userControllers.browse);
+router.get("/users/:id", userControllers.read);
+router.put("/users/:id", userControllers.edit);
+router.post("/users", userControllers.add);
+router.delete("/users/:id", userControllers.destroy);
+
+router.post("/login", authControllers.login);
+
 module.exports = router;
